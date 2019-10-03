@@ -1,0 +1,33 @@
+.footer{
+position: fixed;
+
+    width: 100%;
+    margin-top: 1.5rem;
+    /*padding-bottom: 1rem !important;*/
+    bottom: 0;
+    height: 1rem;
+    color: #555555;
+    background-color: white;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer ul li{
+    text-align: center;
+}
+.footer a{
+    color: #555555;
+}
+.footer i{
+    /*text-align: center;*/
+    font-size: 0.4rem;
+}
+.active{
+    color: #ff6700 !important;
+}
+.info{
+    /*width: 25%;*/
+    text-align: center;
+}

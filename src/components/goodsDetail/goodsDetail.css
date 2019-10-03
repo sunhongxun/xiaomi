@@ -1,0 +1,117 @@
+.am-card-header{
+    padding: 0 15px !important;
+}
+.am-card-footer{
+    display: block;
+}
+.am-card-footer .am-card-footer-extra{
+    display: block;
+}
+.goods{
+
+}
+.goods_content {
+    margin-bottom: 1.5rem;
+}
+.goods .hea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    color: white;
+    background-color: #ff6700;
+    /*height: ;*/
+    font-size: 0.3rem;
+    line-height: 0.96rem;
+}
+
+.list_item{
+
+}
+.list_item .span{
+    position: relative;
+    margin-right: 5px;
+    padding: 5px 0;
+    /*border: 1px solid red;*/
+}
+.list_item .span span{
+    margin-left: 20px;
+    font-size: 0.25rem;
+    color: #999999;
+
+}
+.list_item .icon{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    /*margin: 10px ;*/
+   width: 15px;
+    color: #ff6700;
+}
+.am-list-content span{
+    margin: 0 0.15rem;
+}
+.am-list{
+    margin: 0.25rem;
+}
+.xiaomi_peizhi{
+    height: 1.8rem;
+    width: 250%;
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    /*overflow: scroll;*/
+    /*overflow-x: hidden;*/
+
+}
+.xiaomi_peizhi li{
+    /*float: right;*/
+    border-right: 1px solid #999999;
+    width: 2.8rem;
+    /*line-height: 30px;*/
+    height: 100%;
+    text-align: center;
+}
+.xiaomi_peizhi img{
+    width: 0.55rem;
+}
+
+.addcar{
+    position: fixed;
+    bottom: 5px;
+    width: 90%;
+    margin: 0.1rem 0.3rem;
+    display: flex;
+    padding: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    color: #535353;
+    overflow: hidden;
+    box-shadow: 0 0 10px #888888;
+}
+.addcar button{
+    font-size: 0.3rem;
+    padding: 0.15rem 0.3rem;
+    background-color: red;
+    border-radius: 0.35rem;
+    color: white;
+}
+.addcar .item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.addcar .item li{
+    margin:0.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.addcar .item li a{
+    color: #999999;
+}
+.addcar .item li i{
+    font-size: 0.45rem;
+}

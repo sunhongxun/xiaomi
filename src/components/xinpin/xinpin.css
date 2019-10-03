@@ -1,0 +1,21 @@
+.xinpin{
+    height: 8rem;
+    margin: 0.18rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.xinpin div{
+    width: 50%;
+    height: 100%;
+}
+
+.xinpin div img{
+    width: 100%;
+    /*height: 100%;*/
+}
+.juli{
+    margin-bottom: 6px;
+}
+.juliR{
+    margin-right: 6px;
+}

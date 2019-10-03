@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css'
+import {Route,Switch} from "react-router-dom";
+import 'antd/dist/antd.css'
+import 'antd-mobile/dist/antd-mobile.css';
+import ShopCar from "./components/shopCar/shopCar" ;
+import GoodsDetail from "./components/goodsDetail/goodsDetail";
+import MyInfo from "./components/myInfo/myInfo";
+import Not404 from "./components/notfound/not404";
+import Home from "./components/home/home";
+import Login from "./components/login/login";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Switch>
+            <Route exact path={'/'} component={Home}/>
+            <Route path={'/myInfo'} component={MyInfo}/>
+            <Route path={'/goodsDetail/:shopid'} component={GoodsDetail}/>
+            <Route path={'/login'} component={Login}/>
+            <Route path={'/shopcar'} component={ShopCar}/>
+            <Route  component={Not404}/>
+        </Switch>
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.addcar{
+    position: fixed;
+    bottom: 5px;
+    width: 90%;
+    margin: 0.1rem 0.3rem;
+    display: flex;
+    padding: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.2rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    color: #535353;
+    overflow: hidden;
+    box-shadow: 0 0 10px #888888;
+}
+.addcar button{
+    font-size: 0.3rem;
+    padding: 0.15rem 0.3rem;
+    background-color: red;
+    border-radius: 0.35rem;
+    color: white;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item li{
+    margin:0.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.item li a{
+    color: #999999;
+}
+.item li i{
+    font-size: 0.45rem;
+}

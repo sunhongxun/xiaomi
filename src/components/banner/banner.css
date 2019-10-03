@@ -1,0 +1,21 @@
+.banner{
+    margin-top:0.8rem;
+    z-index: -9999;
+    /*height: 3.75rem;*/
+    /*overflow: hidden;*/
+}
+
+.banner .am-wingblank-lg{
+    margin-right: 0;
+    margin-left: 0;
+}
+/*.banner ul{*/
+/*    width: 300%;*/
+/*    display: flex;*/
+/*}*/
+/*.banner ul li img{*/
+/*    height: 100%;*/
+/*    margin: 0 0.5px;*/
+/*    width: 100%;*/
+/*}*/
+

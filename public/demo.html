@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css" >
+        #container
+          {
+              display:table-cell;
+              text-align:center;
+              vertical-align:middle;
+          }
+        .banner {
+            width: 480px;
+            height: 450px;
+            margin: 150px auto;
+            overflow: hidden;
+            /*background-color: #0e80d2;*/
+
+            animation: key 20s linear infinite;
+        /*animation-duration: 10s;*/
+        /*animation-timing-function: linear;*/
+        /*animation-iteration-count: infinite;*/
+        }
+        @keyframes key {
+            0% {
+                background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566795444644&di=d19a4baf97e6907580437ab7d1f3a06c&imgtype=0&src=http%3A%2F%2Fimg1.ph.126.net%2FuIyQCrLLudkYJJpyjUu3AA%3D%3D%2F2043226856042938570.jpg') no-repeat center center;
+            }
+            25% {
+                background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566795559658&di=afb5ce48ce52c7f73047bab6c0464f8e&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D4013122459%2C1672649128%26fm%3D214%26gp%3D0.jpg') no-repeat;
+            }
+            50% {
+                background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566795444647&di=0d48d7c7b92c341be820e9f5d3ad3867&imgtype=0&src=http%3A%2F%2Fimg.bimg.126.net%2Fphoto%2FNLZrj7IIsMqdr98YJ-32jg%3D%3D%2F444730463205317092.jpg') no-repeat;
+            }
+            75% {
+                background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566795444649&di=4235a8c98308b9b84e01f1fc15f3481c&imgtype=0&src=http%3A%2F%2Fimg0.ph.126.net%2Fa8U6cW788gTU3IwR9XIlUQ%3D%3D%2F6631609824934423677.jpg') no-repeat;
+            }
+            100% {
+                background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566795444644&di=d9a588587ff1bbb8a935e798d0e93f38&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F11%2F20170711115243_VBJvU.thumb.700_0.jpeg  ') no-repeat;
+            }
+
+        }
+        .box{
+            position: relative;
+            height: 600px;
+            width: 400px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid red;
+        }
+        .child{
+            background-color: #0e80d2;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+        }
+        .child1{
+            background-color: #0e80d2;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left:0;
+            right:0;
+            bottom: 0;
+        }
+        .box img{
+            width: 50px;
+            height: auto;
+
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mak{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.35);
+        }
+        .mak .chuang{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+           width: 600px;
+            height: 360px;
+            margin:  auto;
+
+        }
+        .mak .chuang button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <button @click="fn">打开弹窗</button>
+    <hide v-if="isShow" @xxx="fnn"></hide>
+
+</div>
+
+<template id="hide">
+    <div class="mak">
+        <div class="chuang">
+            <button @click="cl">关闭窗口</button>
+        </div>
+    </div>
+
+</template>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+
+    let hide ={
+        template:'#hide',
+        methods: {
+            cl(){
+                this.$emit('xxx')
+            }
+        }
+    };
+
+    let vm = new Vue({
+       el:'#app',
+       data:{
+            isShow:false
+       },
+        components:{
+          hide
+        },
+        methods:{
+          fn(){
+              console.log('打开');
+              // console.log(this.isShow);
+              this.isShow = true;
+          },
+            fnn(){
+                this.isShow = false
+            }
+        }
+   })
+</script>
+
+</body>
+</html>

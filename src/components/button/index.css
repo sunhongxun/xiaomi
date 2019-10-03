@@ -1,0 +1,10 @@
+.but{
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    /*padding: 5px 8px;*/
+    border-radius: 5px;
+    font-size: 0.3rem;
+}
